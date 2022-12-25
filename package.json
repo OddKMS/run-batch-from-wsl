@@ -1,0 +1,39 @@
+{
+  "name": "run-batch-from-wsl",
+  "displayName": "Run .bat files from within WSL",
+  "version": "0.0.1",
+  "author": "OddKMS <https://github.com/OddKMS>",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OddKMS/run-batch-from-wsl"
+  },
+  "engines": {
+    "vscode": "^1.45.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:workbench.action.tasks.runTask"
+  ],
+  "main": "./out/extension",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -b",
+    "watch": "tsc -b -w"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@types/vscode": "^1.45.0",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "eslint": "^8.30.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^4.8.4"
+  }
+}
